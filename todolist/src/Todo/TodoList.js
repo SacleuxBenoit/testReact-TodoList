@@ -33,6 +33,11 @@ class TodoList extends Component {
             );
         })
     }
+
+    deleteTodo(event){
+        event.preventDefault();
+        
+    }
     render(){
         return(
             <div><h1>Ma TodoList</h1>
