@@ -12,7 +12,7 @@ class TodoList extends Component {
         return(
             <div><h1>Ma TodoList</h1>
             <form>
-                <input type="text" placeholder="Renseigner un item"></input>
+                <input value={this.state.userInput}type="text" placeholder="Renseigner un item"></input>
                 <button>Ajouter</button>
             </form>
             </div>
