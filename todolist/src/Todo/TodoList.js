@@ -14,6 +14,10 @@ class TodoList extends Component {
             userInput: event.target.value
         });
     }
+
+    addTodo(event){
+
+    }
     render(){
         return(
             <div><h1>Ma TodoList</h1>
@@ -25,7 +29,7 @@ class TodoList extends Component {
                     onChange={this.onChange.bind(this)} 
                 >
                 </input>
-                <button>Ajouter</button>
+                <button onClick={this.addTodo.bind(this)}>Ajouter</button>
             </form>
             </div>
         );
