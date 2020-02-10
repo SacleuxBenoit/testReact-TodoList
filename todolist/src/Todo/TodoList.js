@@ -22,6 +22,17 @@ class TodoList extends Component {
             items: [...this.state.items, this.state.userInput]
         });
     }
+
+
+    rendererTodos(){
+        return this.state.items.map((item) =>{
+            return (
+                <div key={item}>
+                    {item} | <button>x</button>
+                </div>
+            );
+        })
+    }
     render(){
         return(
             <div><h1>Ma TodoList</h1>
