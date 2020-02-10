@@ -8,6 +8,10 @@ class TodoList extends Component {
             items:[]
         };
     }
+
+    onChange(event){
+        console.log(event.target.value)
+    }
     render(){
         return(
             <div><h1>Ma TodoList</h1>
