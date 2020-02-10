@@ -46,6 +46,7 @@ class TodoList extends Component {
                 </input>
                 <button onClick={this.addTodo.bind(this)}>Ajouter</button>
             </form>
+            <div>{this.renderTodos()}</div>
             </div>
         );
     }
