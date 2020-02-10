@@ -24,7 +24,7 @@ class TodoList extends Component {
     }
 
 
-    rendererTodos(){
+    renderTodos(){
         return this.state.items.map((item) =>{
             return (
                 <div key={item}>
