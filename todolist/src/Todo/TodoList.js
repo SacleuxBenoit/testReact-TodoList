@@ -1,6 +1,13 @@
 import React, {Component} from 'react';
 
 class TodoList extends Component {
+    constructor(){
+        super();
+        this.state={
+            userInput="",
+            items=[''],
+        };
+    }
     render(){
         return(
             <div><h1>Ma TodoList</h1>
