@@ -27,7 +27,7 @@ class TodoList extends Component {
     renderTodos(){
         return this.state.items.map((item) =>{
             return (
-                <div key={item}>
+                <div className="list-group-item"key={item}>
                     {item} | <button onClick={this.deleteTodo.bind(this )}>x</button>
                 </div>
             );
@@ -62,7 +62,7 @@ class TodoList extends Component {
                 Ajouter
                 </button>
             </form>
-            <div>{this.renderTodos()}</div>
+            <div className="list-group">{this.renderTodos()}</div>
             </div>
         );
     }
