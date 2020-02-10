@@ -18,8 +18,9 @@ class TodoList extends Component {
     addTodo(event){
         event.preventDefault();
         this.setState({
+            userInput:'',
             items: [...this.state.items, this.state.userInput]
-        },()=> console.log(this.state))
+        });
     }
     render(){
         return(
