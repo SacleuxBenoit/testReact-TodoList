@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 
 class TodoList extends Component {
-    constructor(){
+    constructor() {
         super();
-        this.state={
-            userInput="",
-            items=[''],
+        this.state = {
+            userInput:'',
+            items:[]
         };
     }
     render(){
