@@ -28,7 +28,7 @@ class TodoList extends Component {
         return this.state.items.map((item) =>{
             return (
                 <div key={item}>
-                    {item} | <button>x</button>
+                    {item} | <button onClick={this.deleteTodo.bind(this)}>x</button>
                 </div>
             );
         })
@@ -36,7 +36,7 @@ class TodoList extends Component {
 
     deleteTodo(event){
         event.preventDefault();
-        
+
     }
     render(){
         return(
