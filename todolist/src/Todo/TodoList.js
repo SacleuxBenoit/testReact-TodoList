@@ -45,16 +45,22 @@ class TodoList extends Component {
     }
     render(){
         return(
-            <div><h1>Ma TodoList</h1>
-            <form>
+            <div><h1 align="center">Ma TodoList</h1>
+            <form className="form-row- align-items-center">
                 <input 
                     value={this.state.userInput}
                     type="text" 
                     placeholder="Renseigner un item"
                     onChange={this.onChange.bind(this)} 
+                    className="form-control mb-2"
                 >
                 </input>
-                <button onClick={this.addTodo.bind(this)}>Ajouter</button>
+                <button 
+                onClick={this.addTodo.bind(this)}
+                className="btn btn-primary"
+                >
+                Ajouter
+                </button>
             </form>
             <div>{this.renderTodos()}</div>
             </div>
